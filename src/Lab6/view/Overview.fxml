@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab6.proj.view.Controller">
+    <children>
+        <SplitPane layoutX="153.0" layoutY="70.0" prefHeight="300.0" prefWidth="602.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="508.0">
+                    <children>
+                        <TableView fx:id="table" layoutX="-12.0" layoutY="49.0" prefHeight="298.0" prefWidth="395.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="162.0" AnchorPane.topAnchor="0.0">
+                            <columns>
+                                <TableColumn fx:id="heroIdCol" prefWidth="40.0" text="ID" />
+                                <TableColumn fx:id="heroNameCol" prefWidth="200.0" text="Name" />
+                                <TableColumn fx:id="heroLocNameCol" prefWidth="120.0" text="Localized name" />
+                                <TableColumn fx:id="heroPrimAttrCol" prefWidth="130" text="Primary Attribute" />
+                                <TableColumn fx:id="heroAttTypeCol" prefWidth="75.0" text="Attack type" />
+                                <TableColumn fx:id="heroRolesCol" prefWidth="75.0" text="Roles" />
+                                <TableColumn fx:id="heroImgCol" prefWidth="75.0" text="Image" />
+                                <TableColumn fx:id="heroIconCol" prefWidth="75.0" text="Icon" />
+                                <TableColumn fx:id="heroBaseHealthCol" prefWidth="75.0" text="Base Health" />
+                                <TableColumn fx:id="heroBaseHealthRegCol" prefWidth="120.0" text="Base health Regen" />
+                                <TableColumn fx:id="heroBaseManaCol" prefWidth="75.0" text="Base mana" />
+                                <TableColumn fx:id="heroBaseManaRegCol" prefWidth="120.0" text="Base mana regen" />
+                                <TableColumn fx:id="heroBaseArmorCol" prefWidth="75.0" text="Base armor" />
+                                <TableColumn fx:id="heroBaseMrCol" prefWidth="75.0" text="Base mr" />
+                                <TableColumn fx:id="heroBaseAttMinCol" prefWidth="120" text="Base min attack" />
+                                <TableColumn fx:id="heroBaseAttMaxCol" prefWidth="120" text="Base max attack" />
+                                <TableColumn fx:id="heroBaseStrCol" prefWidth="110" text="Base straight" />
+                                <TableColumn fx:id="heroBaseAgiCol" prefWidth="110" text="Base agility" />
+                                <TableColumn fx:id="heroBaseIntCol" prefWidth="130" text="Base intelligence" />
+                                <TableColumn fx:id="heroStrGainCol" prefWidth="100.0" text="Straight gain" />
+                                <TableColumn fx:id="heroAgiGainCol" prefWidth="100.0" text="Agility gain" />
+                                <TableColumn fx:id="heroIntGainCol" prefWidth="100.0" text="Intelligence gain" />
+                                <TableColumn fx:id="heroAttRangeCol" prefWidth="100.0" text="Attack range" />
+                                <TableColumn fx:id="heroProjectileSpeedCol" prefWidth="110.0" text="Projectile speed" />
+                                <TableColumn fx:id="heroAttRateCol" prefWidth="75.0" text="Attack rate" />
+                                <TableColumn fx:id="heroMoveSpeedCol" prefWidth="75.0" text="Move speed" />
+                                <TableColumn fx:id="heroTurnRateCol" prefWidth="75.0" text="Turn rate" />
+                                <TableColumn fx:id="heroCmEnabledCol" prefWidth="75.0" text="CM enabled" />
+                                <TableColumn fx:id="heroLegsCol" prefWidth="75.0" text="Legs" />
+                                <TableColumn fx:id="heroProWinCol" prefWidth="75.0" text="Pro wins" />
+                                <TableColumn fx:id="heroProPickCol" prefWidth="75.0" text="Pro picks" />
+                                <TableColumn fx:id="hero_IdCol" prefWidth="75.0" text="Hero ID" />
+                                <TableColumn fx:id="heroProBanCol" prefWidth="75.0" text="Pro Bans" />
+                                <TableColumn fx:id="hero1PickCol" prefWidth="75.0" text="1 picks" />
+                                <TableColumn fx:id="hero1WinCol" prefWidth="75.0" text="1 wins" />
+                                <TableColumn fx:id="hero2PickCol" prefWidth="75.0" text="2 picks" />
+                                <TableColumn fx:id="hero2WinCol" prefWidth="75.0" text="2 wins" />
+                                <TableColumn fx:id="hero3PickCol" prefWidth="75.0" text="3 picks" />
+                                <TableColumn fx:id="hero3WinCol" prefWidth="75.0" text="3 wins" />
+                                <TableColumn fx:id="hero4PickCol" prefWidth="75.0" text="4 picks" />
+                                <TableColumn fx:id="hero4WinCol" prefWidth="75.0" text="4 wins" />
+                                <TableColumn fx:id="hero5PickCol" prefWidth="75.0" text="5 picks" />
+                                <TableColumn fx:id="hero5WinCol" prefWidth="75.0" text="5 wins" />
+                                <TableColumn fx:id="hero6PickCol" prefWidth="75.0" text="6 picks" />
+                                <TableColumn fx:id="hero6WinCol" prefWidth="75.0" text="6 wins" />
+                                <TableColumn fx:id="hero7PickCol" prefWidth="75.0" text="7 picks" />
+                                <TableColumn fx:id="hero7WinCol" prefWidth="75.0" text="7 wins" />
+                                <TableColumn fx:id="hero8PickCol" prefWidth="75.0" text="8 picks" />
+                                <TableColumn fx:id="hero8WinCol" prefWidth="75.0" text="8 wins" />
+                                <TableColumn fx:id="heroNullPickCol" prefWidth="75.0" text="Null picks" />
+                                <TableColumn fx:id="heroNullWinCol" prefWidth="75.0" text="Null wins" />
+
+                            </columns>
+                            <columnResizePolicy>
+                                <TableView fx:constant="UNCONSTRAINED_RESIZE_POLICY" />
+                            </columnResizePolicy>
+                        </TableView>
+                  <MenuButton layoutX="464.0" layoutY="114.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Sort list" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="114.0">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#reload" text="Reload list" />
+                      <MenuItem mnemonicParsing="false" onAction="#sortFuncArmorDesc" text="Armor sort desc" />
+                      <MenuItem mnemonicParsing="false" onAction="#sortFuncArmorAsc" text="Armor sort asc" />
+                        <MenuItem mnemonicParsing="false" onAction="#sortFuncAttackRangeDesc" text="Attack range desc" />
+                        <MenuItem mnemonicParsing="false" onAction="#sortFuncAttackRangeAsc" text="Attack range asc" />
+                        <MenuItem mnemonicParsing="false" onAction="#sortFuncMoveSpeedDesc" text="Move speed desc" />
+                        <MenuItem mnemonicParsing="false" onAction="#sortFuncMoveSpeedAsc" text="Move speed asc" />
+                        <MenuItem mnemonicParsing="false" onAction="#sortFuncIntGainDesc" text="Int gain desc" />
+                        <MenuItem mnemonicParsing="false" onAction="#sortFuncIntGainAsc" text="Int gain asc" />
+                    </items>
+                     <font>
+                        <Font name="Consolas Bold" size="12.0" />
+                     </font>
+                  </MenuButton>
+                  <TextField fx:id="textField" layoutX="443.0" layoutY="188.0" onAction="#filterFunc" onMouseClicked="#filterFunc" prefHeight="26.0" prefWidth="143.0" AnchorPane.rightAnchor="12.199999999999932" AnchorPane.topAnchor="188.0" />
+                  <Label layoutX="445.0" layoutY="166.0" text="Localized name filter" AnchorPane.rightAnchor="14.199999999999932" AnchorPane.topAnchor="166.0">
+                     <font>
+                        <Font name="Consolas Bold" size="12.0" />
+                     </font></Label>
+                  <ImageView fitHeight="97.0" fitWidth="78.0" layoutX="476.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="44.39999999999998" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@dota-2-logo.png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
